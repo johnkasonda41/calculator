@@ -28,7 +28,7 @@ namespace operations.Tests
         }
 
         [TestMethod()]
-        public void QuotientIntDivideZeroTest()
+        public void DivideIntDivideZeroTest()
         {
             Assert.ThrowsException<DivideByZeroException>(() => Division.Divide(a, e));
         }
