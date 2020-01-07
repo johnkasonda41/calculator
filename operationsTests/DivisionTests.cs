@@ -13,6 +13,7 @@ namespace operations.Tests
         private readonly int b = 10;
         private readonly double c = 20.3;
         private readonly double d = 10.2;
+        private readonly int e = 0;
 
         [TestMethod()]
         public void DivideTest()
@@ -24,6 +25,12 @@ namespace operations.Tests
         public void DivideDoubleTest()
         {
             Assert.AreEqual(1.9901960784313728, Division.Divide(c, d));
+        }
+
+        [TestMethod()]
+        public void QuotientIntDivideZeroTest()
+        {
+            Assert.ThrowsException<DivideByZeroException>(() => Division.Divide(a, e));
         }
     }
 }
