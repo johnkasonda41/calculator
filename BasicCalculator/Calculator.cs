@@ -1,5 +1,4 @@
-﻿using System;
-using operations;
+﻿using operations;
 
 namespace BasicCalculator
 {
@@ -12,6 +11,7 @@ namespace BasicCalculator
             result = Addition.Sum(a, b);
             return result;
         }
+
         public int Divide(int a, int b)
         {
             result = Division.Divide(a, b);

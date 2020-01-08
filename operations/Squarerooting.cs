@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace operations
 {
@@ -8,7 +6,6 @@ namespace operations
     {
         public static double Squareroot(int a)
         {
-
             return Math.Sqrt(a);
         }
     }

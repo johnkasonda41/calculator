@@ -6,11 +6,10 @@ namespace operations
     {
         private static object random;
 
-        public static int Randomise(int min, int max)
+        public int Randomise(int min, int max)
         {
-            Random random = new Random();
+            Random random = new Random(0);
             return random.Next(min, max);
-            //return num;
         }
     }
 }

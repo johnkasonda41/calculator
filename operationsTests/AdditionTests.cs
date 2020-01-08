@@ -1,13 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using operations;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace operations.Tests
 {
-
-
     [TestClass()]
     public class AdditionTests
     {
@@ -16,7 +10,7 @@ namespace operations.Tests
         private readonly double c = 10.3;
         private readonly double d = 20.2;
         private readonly double[] arrayA = { 1.01, 2.04, 3.06, 4.07, 5.09, 6.78, 7.21, 8.78, 9.90, 10.12 };
-        private readonly int[] arrayB = {1,2,3,4,5,6,7,8,9,10};
+        private readonly int[] arrayB = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
         [TestMethod()]
         public void SumTest()
@@ -41,6 +35,5 @@ namespace operations.Tests
         {
             Assert.AreEqual(55, Addition.Sum(arrayB));
         }
-
     }
 }

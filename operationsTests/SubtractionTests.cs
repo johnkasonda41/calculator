@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using operations;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace operations.Tests
 {
@@ -13,7 +9,6 @@ namespace operations.Tests
         private readonly int b = 10;
         private readonly double c = 20.3;
         private readonly double d = 10.2;
-
 
         [TestMethod()]
         public void DifferenceTest()
@@ -26,7 +21,5 @@ namespace operations.Tests
         {
             Assert.AreEqual(10.100000000000001, Subtraction.Difference(c, d));
         }
-
-        
     }
 }

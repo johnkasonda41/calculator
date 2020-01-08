@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace operations
+﻿namespace operations
 {
     public class Subtraction
     {
@@ -15,7 +11,5 @@ namespace operations
         {
             return a - b;
         }
-
-        
     }
 }

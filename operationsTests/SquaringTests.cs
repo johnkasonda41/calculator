@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using operations;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace operations.Tests
 {
@@ -11,7 +7,6 @@ namespace operations.Tests
     {
         private readonly int a = 5;
         private readonly double b = 10.8;
-
 
         [TestMethod()]
         public void SquareTest()
