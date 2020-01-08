@@ -35,5 +35,19 @@ namespace BasicCalculator.Tests
 
             Assert.ThrowsException<DivideByZeroException>(() => calculator.Divide(2, 0));
         }
+
+        [TestMethod()]
+
+        public void AddIntDoubleTest()
+        {
+            Calculator calculator = new Calculator();
+            int a = 1;
+            double b = 2.02;
+            double c = calculator.Add(a, b);
+
+            Assert.AreEqual(3.02, c);
+            Assert.AreEqual(3.02, calculator.result);
+
+        }
     }
 }
