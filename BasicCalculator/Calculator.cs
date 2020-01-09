@@ -4,33 +4,52 @@ using Subtract;
 using Multiply;
 using Squared;
 using Cubed;
-
+using Squareroot;
 
 namespace BasicCalculator
 {
    
-    public interface ICalcultorBasic
+    
+    public class Calculator : IAdd, IDivide, ISubtract, IMultiply, ISquared, ICubed, ISquareroot
     {
-        public dynamic Add(dynamic a, dynamic b);
-        public dynamic Divide(dynamic a, dynamic b);
-        public dynamic Difference(dynamic a, dynamic b);
-        public dynamic Multiply(dynamic a, dynamic b);
-        public dynamic Square(dynamic a);
-        public dynamic Cubed(dynamic a);
-
-    }
-    public class Calculator : IAdd, IDivide, ISubtract, IMultiply, ISquared, ICubed
-    {
-        // Creating objects of Geeks1 and Geeks2 class 
+        // Creating objects of Add, Divide, Subtract, Multiply, Squared, Cubed, Squareroot 
         Ad add = new Ad();
         Div divide = new Div();
         Sub subtract = new Sub();
         Multiple multiply = new Multiple();
         Squares square = new Squares();
         Cubes cube = new Cubes();
+        Squareroots squareroot = new Squareroots();
         
-        public dynamic result;
+       // public dynamic result { get; set; }
 
+        public dynamic result
+        {
+            get
+            {
+                return result;
+            }
+            set
+            {
+                result = value;
+            }
+        }
+       /* public dynamic GetResult()
+        {
+            return result;
+        }
+
+        public dynamic SetResult()
+        {
+            throw new System.Exception("Result Set");
+            
+        }*/
+
+        public dynamic Squareroot(dynamic a)
+        {
+            result = squareroot.Squareroot(a);
+            return result;
+        }
         public dynamic Cubed(dynamic a)
         {
             result = cube.Cubed(a);
@@ -58,6 +77,13 @@ namespace BasicCalculator
         {
             result = add.Add(a, b);
            
+            return result;
+        }
+
+        public int Add(int[] a)
+        {
+            result = add.Add(a);
+
             return result;
         }
         public dynamic Divide(dynamic a, dynamic b)

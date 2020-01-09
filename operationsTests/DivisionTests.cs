@@ -21,7 +21,7 @@ namespace operations.Tests
         [TestMethod()]
         public void DivideDoubleTest()
         {
-            Assert.AreEqual(1.9901960784313728, Division.Divide(c, d));
+            Assert.AreEqual(1.99, Division.Divide(c, d));
         }
 
         [TestMethod()]

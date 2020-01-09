@@ -16,5 +16,11 @@ namespace Adding
             result = Addition.Sum(a, b);
             return result;
         }
+
+        public dynamic Add(dynamic a)
+        {
+            result = Addition.Sum(a);
+            return result;
+        }
     }
 }
