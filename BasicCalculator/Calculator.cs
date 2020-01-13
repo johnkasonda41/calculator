@@ -20,20 +20,28 @@ namespace BasicCalculator
         Squares square = new Squares();
         Cubes cube = new Cubes();
         Squareroots squareroot = new Squareroots();
-        
-       // public dynamic result { get; set; }
 
-        public dynamic result
+        // public dynamic result { get; set; }
+        public dynamic result;
+        /*public dynamic Result
         {
             get
             {
-                return result;
+                string type = result.GetType().ToString();
+                if(type == "Int")
+                {
+                    return result;
+                }
+                else
+                {
+                    return Helpers.Rounding.RoundTwoDecimalPlaces(result);
+                }
             }
             set
             {
                 result = value;
             }
-        }
+        } */
        /* public dynamic GetResult()
         {
             return result;
@@ -88,7 +96,7 @@ namespace BasicCalculator
         }
         public dynamic Divide(dynamic a, dynamic b)
         {
-            
+
             result = divide.Divide(a, b);
             return result;
 

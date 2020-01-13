@@ -15,5 +15,15 @@ namespace Helpers.Tests
         {
             Assert.AreEqual(10.26, Helpers.Rounding.RoundTwoDecimalPlaces(num));
         }
+
+        [TestMethod()]
+        public void RoundTwoDecimalPlacesTest()
+        {
+
+            Assert.AreEqual(10.26, Helpers.Rounding.RoundTwoDecimalPlaces(num));
+
+        }
+
+       
     }
 }

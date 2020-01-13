@@ -6,7 +6,7 @@ namespace Helpers
 {
     public class Rounding
     {
-        public static dynamic RoundTwoDecimalPlaces(dynamic value)
+        public static double RoundTwoDecimalPlaces(double value)
         {
             return Math.Round(value, 2, MidpointRounding.ToEven);
         }
