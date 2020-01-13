@@ -11,6 +11,7 @@ namespace operations.Tests
         private readonly double c = 20.3;
         private readonly double d = 10.2;
         private readonly int e = 0;
+        private readonly double dif = 0.0;
 
         [TestMethod()]
         public void DivideTest()
@@ -21,7 +22,8 @@ namespace operations.Tests
         [TestMethod()]
         public void DivideDoubleTest()
         {
-            Assert.AreEqual(1.9901960784313728, Division.Divide(c, d));
+
+            Assert.AreEqual(1.99, Helpers.Rounding.RoundTwoDecimalPlaces(Division.Divide(c, d)));
         }
 
         [TestMethod()]

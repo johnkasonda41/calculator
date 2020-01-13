@@ -1,15 +1,20 @@
-﻿namespace operations
+﻿using Helpers;
+namespace operations
 {
     public class Division
     {
-        public static int Divide(int a, int b)
+        
+        public static double Divide(int a, int b)
         {
-            return a / b;
+            double c = a / b;
+            return c;
         }
 
         public static double Divide(double a, double b)
         {
-            return a / b;
+            double c = a / b;
+            //return Helpers.Rounding.RoundTwoDecimalPlaces(c);
+            return c;
         }
     }
 }

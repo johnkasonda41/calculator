@@ -27,7 +27,7 @@ namespace operations.Tests
         [TestMethod()]
         public void SumDoubleArrayTest()
         {
-            Assert.AreEqual(58.059999999999995, Addition.Sum(arrayA));
+            Assert.AreEqual(58.06, Addition.Sum(arrayA));
         }
 
         [TestMethod()]

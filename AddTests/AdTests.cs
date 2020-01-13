@@ -1,16 +1,16 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using operations;
+using Adding;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace operations.Tests
+namespace Adding.Tests
 {
     [TestClass()]
-    public class AdditionTests
+    public class AdTests
     {
         [TestMethod()]
-        public void SumTest()
+        public void AddTest()
         {
             Assert.Fail();
         }
