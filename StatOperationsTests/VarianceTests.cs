@@ -12,25 +12,19 @@ namespace StatOperations.Tests
     [TestClass()]
     public class VarianceTests
     {
-        private readonly int[] arrayA = { 1, 2, 3, 4, 5 };
-        private readonly int[] arrayB = { -2, -1, 0, 1, 2 };
+        private readonly double[] arrayA = { 6, 2, 3, 1 };
+        //private readonly double[] subarray = { -2, -1, 0, 1, 2 };
         private readonly int a = 4;
-        ArrayList subarray = new ArrayList();
+       // private readonly ArrayList subarrayB = new ArrayList();
 
         private readonly int mean = 3;
         [TestMethod()]
         public void VariancesTest()
         {
-            //Variance.Variances(arrayA, mean);
-            subarray = Variance.Variances(arrayA, mean);
-            bool a = subarray.SequenceEqual(arrayB);
-            Assert.AreEqual("True", a);
+            
+            Assert.AreEqual(3.5, Variance.Variances(arrayA, mean));
         }
 
-        [TestMethod()]
-        public void VariancesTest1()
-        {
-            Assert.AreEqual(1, Variance.Variances(a, mean));
-        }
+        
     }
 }

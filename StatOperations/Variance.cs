@@ -11,29 +11,30 @@ namespace StatOperations
     {
 
         
-        public static dynamic Variances(dynamic onevalue, int mean)
+       
+        public static dynamic Variances(dynamic arrayA, int mean)
         {
-            
-            return operations.Subtraction.Difference(onevalue, mean);
-           
-        }
-        public static ArrayList Variances(int[] arrayA, int mean)
-        {
-            ArrayList subarray = new ArrayList();
+            int arraylen = Helpers.Array.ArrayLength(arrayA);
+            //Array subarray = new Array(arraylen);
+            int[] vArray = new int[arraylen];
+
             dynamic diffvalue;
-            /*           
-
-            subarray.Add(577);
-            subarray.Add(286);*/
-
+            double addedSquares = 0.0;
+            int i = 0;
+            double vValue = 0.0;
             foreach (int b in arrayA)
             {
-                diffvalue = Variances(b, mean);
-                subarray.Add(diffvalue);
+                diffvalue = operations.Subtraction.Difference(b, mean);
+                vArray[i] = diffvalue;
+                //squaredValue = vValue[i];
+                vArray[i] = operations.Squaring.Square(vArray[i]);
+                addedSquares = addedSquares + vArray[i];
 
+                i++;                                          
             }
 
-            return subarray;
+            vValue = Helpers.Rounding.RoundTwoDecimalPlaces(operations.Division.Divide(addedSquares, arraylen));
+            return vValue;
         }
     }
 }
