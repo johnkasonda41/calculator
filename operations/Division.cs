@@ -13,8 +13,7 @@ namespace operations
         public static double Divide(double a, double b)
         {
             double c = a / b;
-            //return Helpers.Rounding.RoundTwoDecimalPlaces(c);
-            return c;
+            return Helpers.Rounding.RoundTwoDecimalPlaces(c);
         }
     }
 }

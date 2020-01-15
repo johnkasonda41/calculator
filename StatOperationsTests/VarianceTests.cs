@@ -14,7 +14,7 @@ namespace StatOperations.Tests
     {
         private readonly double[] arrayA = { 6, 2, 3, 1 };
         //private readonly double[] subarray = { -2, -1, 0, 1, 2 };
-        private readonly int a = 4;
+        //private readonly int a = 4;
        // private readonly ArrayList subarrayB = new ArrayList();
 
         private readonly int mean = 3;
