@@ -12,9 +12,11 @@ namespace StatOperations
         public static dynamic StandardDev(dynamic values)
         {
             var mean = StatOperations.Mean(values);
+            var variance = Variance.Variances(values, mean);
+            var standiv = operations.Squarerooting.Squareroot(variance);
             //var valueCount = Helpers.Array.ArrayLength(values);
 
-            return mean; // to come and include the actual variable
+            return standiv; // to come and include the actual variable
         }
 
     }

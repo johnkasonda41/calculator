@@ -12,17 +12,17 @@ namespace StatOperations
 
         
        
-        public static dynamic Variances(dynamic arrayA, int mean)
+        public static dynamic Variances(dynamic arrayA, double mean)
         {
             int arraylen = Helpers.Array.ArrayLength(arrayA);
             //Array subarray = new Array(arraylen);
-            int[] vArray = new int[arraylen];
+            double[] vArray = new double[arraylen];
 
             dynamic diffvalue;
             double addedSquares = 0.0;
             int i = 0;
             double vValue = 0.0;
-            foreach (int b in arrayA)
+            foreach (double b in arrayA)
             {
                 diffvalue = operations.Subtraction.Difference(b, mean);
                 vArray[i] = diffvalue;

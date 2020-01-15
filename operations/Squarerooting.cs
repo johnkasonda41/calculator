@@ -8,5 +8,10 @@ namespace operations
         {
             return Math.Sqrt(a);
         }
+
+        public static double Squareroot(double a)
+        {
+            return Helpers.Rounding.RoundTwoDecimalPlaces(Math.Sqrt(a));
+        }
     }
 }

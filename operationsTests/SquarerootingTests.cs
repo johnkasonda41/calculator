@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using operations;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace operations.Tests
 {
@@ -12,6 +13,12 @@ namespace operations.Tests
         public void SquarerootTest()
         {
             Assert.AreEqual(5, Squarerooting.Squareroot(a));
+        }
+
+        [TestMethod()]
+        public void SquarerootTest1()
+        {
+            Assert.AreEqual(3.29, Squarerooting.Squareroot(b));
         }
     }
 }
