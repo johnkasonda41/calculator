@@ -15,7 +15,6 @@ namespace StatOperations
         public static dynamic Variances(dynamic arrayA, double mean)
         {
             int arraylen = Helpers.Array.ArrayLength(arrayA);
-            //Array subarray = new Array(arraylen);
             double[] vArray = new double[arraylen];
 
             dynamic diffvalue;
